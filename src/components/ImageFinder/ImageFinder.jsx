@@ -99,9 +99,7 @@ class ImageFinder extends Component {
           />
         )}
         <ImageGallery queryData={queryData} onOpenModal={this.modalToggle} />
-        {queryData.length > 0 && !isLoading && (
-          <Button fetchImages={this.fetchImages} />
-        )}
+        {queryData.length > 0 && <Button fetchImages={this.fetchImages} />}
         {showModal && (
           <Modal onCloseModal={this.modalToggle}>
             <img src={modalImg} />
