@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Button.module.css';
+import PropTypes from 'prop-types';
 
 const Button = ({ fetchImages }) => {
   return (
@@ -9,6 +10,10 @@ const Button = ({ fetchImages }) => {
       </button>
     </div>
   );
+};
+
+Button.propTypes = {
+  fetchImages: PropTypes.func.isRequired,
 };
 
 export default Button;

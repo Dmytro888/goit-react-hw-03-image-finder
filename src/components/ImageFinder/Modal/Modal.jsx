@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { createPortal } from 'react-dom';
-
 import styles from './Modal.module.css';
 
 const modalRoot = document.querySelector('#modal-root');
